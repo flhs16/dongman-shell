@@ -27,4 +27,4 @@ jobs:
         run: |
           gh release delete latest --cleanup-tag --yes 2>/dev/null || true
           gh release create latest app/build/outputs/apk/release/app-release.apk \
-            --title "动漫共和国外壳 latest" --notes "自动构建 $GITHUB_SHA" --clobber
+            --title "动漫共和国外壳 latest" --notes "自动构建 $GITHUB_SHA" --latest
