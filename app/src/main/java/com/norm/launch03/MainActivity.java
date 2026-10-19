@@ -1,4 +1,4 @@
-package com.guoguo.newicon;
+package com.norm.launch03;
 
 import android.app.Activity;
 import android.app.PendingIntent;

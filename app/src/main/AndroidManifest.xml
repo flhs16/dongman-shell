@@ -9,7 +9,7 @@
         android:allowBackup="false">
 
         <activity
-            android:name="com.guoguo.newicon.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
