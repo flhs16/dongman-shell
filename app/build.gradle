@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.guoguo.newicon'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.guoguo.newicon'
+        minSdk 21
+        targetSdk 34
+        versionCode 20
+        versionName '2.0'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('../keystore/wrapks.p12')
+            storePassword 'P3wrap2026'
+            keyAlias 'wrapkey'
+            keyPassword 'P3wrap2026'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
